@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="swap-container">
+
+            <div class="swap-container">
+                <div class="title-container">
+                    <h1 class="main-title">Currency Exchange Calculator</h1>
+                    <p class="subtitle">Convert currencies in real-time</p>
+                </div>
+
+            <div class="currency-box">
+                <div class="currency-header">
+                    <h3>From</h3>
+                    <div class="currency-selection">
+                        <img id="flag-from" class="flag-img" src="" alt="Flag">
+                        <select id="currency-from"></select>
+                    </div>
+                </div>
+                <div class="currency-name" id="from-currency-name">United States Dollar</div>
+                <input type="number" id="amount-from" class="amount-input" placeholder="Enter amount">
+            </div>
+
+            <button class="swap-button" id="swap-btn">
+                <span class="swap-icon">⇅</span>
+            </button>
+
+            <div class="currency-box">
+                <div class="currency-header">
+                    <h3>To</h3>
+                    <div class="currency-selection">
+                        <img id="flag-to" class="flag-img" src="" alt="Flag">
+                        <select id="currency-to"></select>
+                    </div>
+                </div>
+                <div class="currency-name" id="to-currency-name">Euro</div>
+                <input type="number" id="amount-to" class="amount-input" readonly>
+            </div>
+
+            <div class="exchange-rate-info" id="rate-info">
+                1 USD = 1.00 USD
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
